@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portafolio de ingeniería de sistemas: proyectos, perfil profesional y contacto."
+    />
+    <meta name="theme-color" content="#101812" />
+    <title>Portafolio | Ingeniería de sistemas</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <canvas class="particle-canvas" aria-hidden="true"></canvas>
+    <div class="page-glow page-glow--top" aria-hidden="true"></div>
+    <div class="page-glow page-glow--side" aria-hidden="true"></div>
+    <header class="site-header">
+      <a class="brand" href="#inicio" aria-label="Ir al inicio">
+        <svg class="brand-symbol" viewBox="0 0 56 56" aria-hidden="true">
+          <defs>
+            <linearGradient id="logo-gradient" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#ddf5a8" />
+              <stop offset="1" stop-color="#8dbb61" />
+            </linearGradient>
+          </defs>
+          <rect x="1" y="1" width="54" height="54" rx="15" fill="#14211a" stroke="#546f45" stroke-width="1.5" />
+          <path d="M12 40V16h6l10 13 10-13h6v24h-6V25L28 37 18 25v15h-6Z" fill="url(#logo-gradient)" />
+          <circle cx="43" cy="12" r="3.5" fill="#dff5ac" />
+          <circle cx="13" cy="45" r="2" fill="#86bd77" />
+        </svg>
+        <span class="brand-copy"><strong>Mario<span class="brand-accent">.</span></strong><small>Ingeniería &amp; tecnología</small></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Abrir menú">
+        <span></span><span></span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Navegación principal">
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#certificados">Certificados</a>
+        <a class="nav-contact" href="#contacto">Hablemos <span aria-hidden="true">↗</span></a>
+      </nav>
+    </header>
+
+    <main id="contenido" tabindex="-1">
+      <section class="hero" id="inicio" aria-labelledby="hero-title">
+        <div class="section-wrap hero-inner">
+          <div class="hero-copy reveal">
+            <p class="eyebrow"><span class="status-dot"></span> INGENIERÍA · TECNOLOGÍA · PROPÓSITO</p>
+            <h1 id="hero-title">Ideas que crecen.<br /><span>Tecnología que conecta.</span></h1>
+            <p class="hero-description">
+              Hola, soy <strong>ingeniero de sistemas</strong>. Diseño y construyo soluciones digitales que combinan
+              tecnología, estrategia y una visión puesta en el futuro.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#proyectos">Explorar proyectos <span class="button-arrow" aria-hidden="true">↗</span></a>
+              <a class="text-link" href="#sobre-mi">Conoce mi enfoque <span aria-hidden="true">↓</span></a>
+            </div>
+            <div class="expertise-tags" aria-label="Áreas de interés">
+              <span>Desarrollo web</span>
+              <span>Infraestructura</span>
+              <span>Innovación</span>
+            </div>
+          </div>
+
+          <div class="hero-art reveal" aria-label="Ilustración de una hoja rodeada de órbitas digitales">
+            <div class="art-orbit art-orbit--one"></div>
+            <div class="art-orbit art-orbit--two"></div>
+            <div class="art-orbit art-orbit--three"></div>
+            <span class="orbit-node orbit-node--one"></span>
+            <span class="orbit-node orbit-node--two"></span>
+            <span class="orbit-node orbit-node--three"></span>
+            <div class="art-core">
+              <svg viewBox="0 0 160 160" role="img" aria-label="Hoja verde">
+                <path d="M126 31C81 30 39 45 34 83c-3 24 13 43 34 44 38 3 57-40 58-96Z" fill="none" stroke="currentColor" stroke-width="2.5" />
+                <path d="M42 117c20-26 43-47 73-69M71 88c-1-12-5-21-14-29m31 10c13-2 23 0 31 5m-51 36c-2-9-7-16-16-21" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2" />
+              </svg>
+            </div>
+            <div class="art-caption"><span class="caption-line"></span><span>CREAR CON INTENCIÓN</span></div>
+            <span class="art-index">01 — ∞</span>
+            <div class="visual-card">
+              <span class="visual-card-icon" aria-hidden="true">✳</span>
+              <span>Soluciones digitales<br /><strong>con propósito</strong></span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-bottom section-wrap">
+          <span class="hero-bottom-line"></span>
+          <p>EXPLORAR · APRENDER · CONSTRUIR</p>
+          <span class="hero-bottom-line"></span>
+        </div>
+      </section>
+
+      <div class="ticker" aria-label="Áreas de trabajo">
+        <div class="ticker-content">
+          <span>DESARROLLO WEB</span><b aria-hidden="true">✳</b>
+          <span>EXPERIENCIA DIGITAL</span><b aria-hidden="true">✳</b>
+          <span>INGENIERÍA DE SISTEMAS</span><b aria-hidden="true">✳</b>
+          <span>TECNOLOGÍA CON PROPÓSITO</span><b aria-hidden="true">✳</b>
+        </div>
+      </div>
+
+      <section class="section about-section" id="sobre-mi" aria-labelledby="about-title">
+        <div class="section-wrap about-grid">
+          <div class="section-intro reveal">
+            <p class="eyebrow">01 / SOBRE MÍ</p>
+            <h2 id="about-title">Tecnología con una <em>visión humana.</em></h2>
+          </div>
+          <div class="about-body reveal">
+            <p>
+              Me interesa transformar desafíos complejos en experiencias claras, accesibles y útiles. Combino una
+              mentalidad técnica con sensibilidad por el diseño y la forma en que las personas usan los productos digitales.
+            </p>
+            <p>
+              Mi enfoque une el desarrollo, la infraestructura y la mejora continua para crear soluciones que no solo
+              funcionen, sino que también generen valor.
+            </p>
+            <div class="skills" aria-label="Áreas de interés">
+              <span>Desarrollo web</span>
+              <span>Infraestructura</span>
+              <span>UX / UI</span>
+              <span>Innovación</span>
+              <span>Git &amp; GitHub</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section project-section" id="proyectos" aria-labelledby="projects-title">
+        <div class="section-wrap">
+          <div class="section-heading reveal">
+            <div>
+              <p class="eyebrow">02 / PROYECTOS</p>
+              <h2 id="projects-title">Trabajo que se convierte <em>en resultados.</em></h2>
+            </div>
+            <p>Una selección de áreas donde aplico tecnología, diseño y pensamiento estratégico.</p>
+          </div>
+          <div class="project-grid">
+            <article class="project-card reveal">
+              <div class="project-visual visual-dashboard">
+                <div class="mock-window">
+                  <div class="mock-top"><span></span><span></span><span></span><i>workspace / overview</i></div>
+                  <div class="mock-body"><div class="mock-sidebar"><b></b><b></b><b></b><b></b></div><div class="mock-content"><small>RESUMEN GENERAL</small><div class="mock-stats"><i></i><i></i><i></i></div><div class="mock-chart"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div></div></div>
+                </div>
+                <span class="visual-label">01 / PRODUCTO DIGITAL</span>
+              </div>
+              <div class="project-info"><div><span class="project-number">01 / DESARROLLO WEB</span><h3>Sitios web y experiencias digitales</h3><p>Interfaces rápidas, adaptables y enfocadas en las personas.</p></div><span class="project-arrow" aria-hidden="true">↗</span></div>
+              <div class="tag-list"><span>UX / UI</span><span>DESARROLLO WEB</span><span>DATOS</span></div>
+            </article>
+            <article class="project-card reveal">
+              <div class="project-visual visual-network">
+                <div class="network-map"><span class="network-point point-a"></span><span class="network-point point-b"></span><span class="network-point point-c"></span><span class="network-point point-d"></span><span class="network-point point-e"></span><i class="network-link link-a"></i><i class="network-link link-b"></i><i class="network-link link-c"></i><i class="network-link link-d"></i><div class="network-core">N<span>✳</span></div></div>
+                <span class="visual-label">02 / SISTEMAS</span>
+              </div>
+              <div class="project-info"><div><span class="project-number">02 / SISTEMAS</span><h3>Automatización e infraestructura</h3><p>Flujos de trabajo organizados y procesos más eficientes.</p></div><span class="project-arrow" aria-hidden="true">↗</span></div>
+              <div class="tag-list"><span>INTEGRACIÓN</span><span>SISTEMAS</span><span>PROCESOS</span></div>
+            </article>
+            <article class="project-card reveal">
+              <div class="project-visual visual-nature">
+                <div class="nature-sun"></div><div class="nature-hill nature-hill--back"></div><div class="nature-hill nature-hill--front"></div><div class="nature-leaf">✳</div>
+                <span class="visual-label">03 / INNOVACIÓN</span>
+              </div>
+              <div class="project-info"><div><span class="project-number">03 / DISEÑO ESTRATÉGICO</span><h3>Diseño y optimización UX/UI</h3><p>Experiencias intuitivas con decisiones basadas en objetivos.</p></div><span class="project-arrow" aria-hidden="true">↗</span></div>
+              <div class="tag-list"><span>DISEÑO</span><span>SEO</span><span>USABILIDAD</span></div>
+            </article>
+          </div>
+          <p class="section-note">Estos bloques son ejemplos de áreas de trabajo. Sustitúyelos por tus proyectos reales cuando tengas tus casos documentados.</p>
+        </div>
+      </section>
+
+      <section class="section certificates-section" id="certificados" aria-labelledby="certificates-title">
+        <div class="section-wrap certificates-layout">
+          <div class="certificates-intro reveal">
+            <p class="eyebrow">03 / APRENDIZAJE</p>
+            <h2 id="certificates-title">Siempre <em>en evolución.</em></h2>
+            <p>El aprendizaje continuo es parte fundamental de mi manera de trabajar. Aquí presento mis certificaciones y formación más relevantes.</p>
+          </div>
+          <div class="certificate-stack">
+            <article class="certificate-row reveal">
+              <span class="certificate-icon" aria-hidden="true">✧</span>
+              <span class="certificate-details"><strong>Nombre de tu certificación</strong><span>Institución emisora · Agrega un enlace verificable</span></span>
+              <span class="certificate-arrow" aria-hidden="true">↗</span>
+            </article>
+            <article class="certificate-row reveal">
+              <span class="certificate-icon" aria-hidden="true">⌘</span>
+              <span class="certificate-details"><strong>Nombre de tu curso o logro</strong><span>Plataforma o institución · Agrega un enlace verificable</span></span>
+              <span class="certificate-arrow" aria-hidden="true">↗</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact-section" id="contacto" aria-labelledby="contact-title">
+        <div class="section-wrap contact-panel reveal">
+          <div class="contact-copy">
+            <p class="eyebrow">04 / CONTACTO</p>
+            <h2 id="contact-title">¿Construimos algo <em>extraordinario?</em></h2>
+            <p>Si tienes una idea, un proyecto o una oportunidad de colaboración, conversemos.</p>
+          </div>
+          <form class="contact-form" id="contact-form">
+            <label for="name">Tu nombre</label>
+            <input id="name" name="name" type="text" placeholder="¿Cómo te llamas?" autocomplete="name" required />
+            <label for="email">Tu correo</label>
+            <input id="email" name="email" type="email" placeholder="nombre@correo.com" autocomplete="email" required />
+            <label for="message">Tu mensaje</label>
+            <textarea id="message" name="message" rows="4" placeholder="Cuéntame un poco sobre tu idea..." required></textarea>
+            <button class="button button-primary submit-button" type="submit">Preparar mensaje <span class="button-arrow" aria-hidden="true">↗</span></button>
+            <p class="form-note" id="form-status" role="status">Se abrirá tu aplicación de correo para enviar el mensaje.</p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="section-wrap footer-inner">
+        <a class="footer-brand" href="#inicio">Mario<span>.</span></a>
+        <p>Diseñado con intención · <span id="current-year"></span></p>
+        <a href="#inicio">Volver arriba ↑</a>
+      </div>
+    </footer>
+  </body>
+</html>
