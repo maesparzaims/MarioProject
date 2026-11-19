@@ -114,9 +114,9 @@ function drawParticles(timestamp) {
   context.clearRect(0, 0, window.innerWidth, window.innerHeight);
   if (pointer.active) {
     const glow = context.createRadialGradient(pointer.x, pointer.y, 0, pointer.x, pointer.y, 220);
-    glow.addColorStop(0, "rgba(183, 216, 131, 0.34)");
-    glow.addColorStop(0.45, "rgba(137, 180, 103, 0.16)");
-    glow.addColorStop(1, "rgba(137, 180, 103, 0)");
+    glow.addColorStop(0, "rgba(124, 158, 216, 0.34)");
+    glow.addColorStop(0.45, "rgba(97, 127, 180, 0.16)");
+    glow.addColorStop(1, "rgba(97, 127, 180, 0)");
     context.fillStyle = glow;
     context.fillRect(pointer.x - 220, pointer.y - 220, 440, 440);
   }
@@ -148,7 +148,7 @@ function drawParticles(timestamp) {
     context.beginPath();
     context.arc(particle.x, particle.y, particle.radius, 0, Math.PI * 2);
     const cursorHighlight = pointer.active && distance < 190 ? (1 - distance / 190) * 0.62 : 0;
-    context.fillStyle = `rgba(205, 235, 169, ${Math.min(1, particle.alpha + cursorHighlight)})`;
+    context.fillStyle = `rgba(164, 190, 235, ${Math.min(1, particle.alpha + cursorHighlight)})`;
     context.fill();
 
     if (pointer.active && distance < POINTER_LINK_DISTANCE) {
@@ -156,7 +156,7 @@ function drawParticles(timestamp) {
       context.moveTo(particle.x, particle.y);
       context.lineTo(pointer.x, pointer.y);
       context.lineWidth = 1.2;
-      context.strokeStyle = `rgba(190, 225, 151, ${0.68 * (1 - distance / POINTER_LINK_DISTANCE)})`;
+      context.strokeStyle = `rgba(145, 174, 225, ${0.68 * (1 - distance / POINTER_LINK_DISTANCE)})`;
       context.stroke();
     }
 
@@ -171,7 +171,7 @@ function drawParticles(timestamp) {
         context.moveTo(particle.x, particle.y);
         context.lineTo(next.x, next.y);
         context.lineWidth = 1;
-        context.strokeStyle = `rgba(160, 192, 131, ${0.14 * (1 - separation / PARTICLE_LINK_DISTANCE)})`;
+        context.strokeStyle = `rgba(126, 150, 192, ${0.14 * (1 - separation / PARTICLE_LINK_DISTANCE)})`;
         context.stroke();
       }
     }
